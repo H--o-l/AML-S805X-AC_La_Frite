@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Script from github.com/openenergymonitor/avrdude-rpi/tree/5c129e2
+
+strace -o "|/opt/server/autoreset" -eioctl /home/hoel/.platformio/packages/tool-avrdude/avrdude_save $@
